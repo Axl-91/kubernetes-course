@@ -1,0 +1,14 @@
+{
+  "name": "the_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Axel Aparicio Rotermund",
+  "license": "ISC",
+  "dependencies": {},
+  "type": "module"
+}
