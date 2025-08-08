@@ -1,7 +1,10 @@
 # Kubernetes Course
 
+Repository containing exercises from the [_DevOps with Kubernetes_](https://courses.mooc.fi/org/uh-cs/courses/devops-with-kubernetes) course.
+
 ## Exercises
 
+### Chapter 1
 - [1.1](https://github.com/Axl-91/kubernetes-course/tree/1.1)
 - [1.2](https://github.com/Axl-91/kubernetes-course/tree/1.2)
 - [1.3](#)
