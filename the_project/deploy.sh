@@ -12,6 +12,6 @@ echo "Importing image to k3d cluster..."
 k3d image import the-project:latest
 
 echo "Deploying to Kubernetes..."
-kubectl apply -f manifests/deployment.yaml
+kubectl apply -f manifests
 
 echo "Deployment completed successfully!"
