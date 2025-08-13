@@ -8,5 +8,7 @@
   },
   "keywords": [],
   "author": "Axel Aparicio Rotermund",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {},
+  "type": "module"
 }
