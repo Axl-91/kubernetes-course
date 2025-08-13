@@ -1,7 +1,8 @@
 # Log Output
 
-Steps to deploy
+To deploy run the `deploy.sh` script
+
+Ex:
 ``` bash
-docker build -t log-output:latest .
-kubectl apply -f manifests/deployment.yaml
+./deploy.sh
 ```
