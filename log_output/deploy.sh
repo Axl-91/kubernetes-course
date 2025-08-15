@@ -3,17 +3,20 @@
 # Build and Deploy Script for k3d
 # Usage: ./deploy.sh
 
+GREEN='\033[32m'
+RESET='\033[0m'
+
 set -e  # Exit on any error
 
-echo -e "\033[32mBuilding Docker images...\033[0m\n"
+echo -e "\n${GREEN}Building Docker images...${RESET}\n"
 docker build -t log-output-response:latest ./log-output-response
 docker build -t log-output-writer:latest ./log-output-writer
 
-echo -e "\n\033[32mImporting images to k3d cluster...\033[32m\n"
+echo -e "\n${GREEN}Importing images to k3d cluster...${RESET}\n"
 k3d image import log-output-response:latest
 k3d image import log-output-writer:latest
 
-echo -e "\n\033[32mDeploying to Kubernetes...\033[0m\n"
+echo -e "\n${GREEN}Deploying to Kubernetes...${RESET}\n"
 kubectl apply -f manifests
 
-echo -e "\n\033[32mDeployment completed successfully!\033[0m\n"
+echo -e "\n${GREEN}Deployment completed successfully!${RESET}\n"
